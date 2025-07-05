@@ -1,0 +1,21 @@
+{% extends "invApp/layout.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Inventory App</h1>
+    <p>This is the home page of the inventory management system.</p>
+    <p>Use the navigation bar to add products or view the product list.</p>
+
+    <div class="jumbotron text-center">
+        <h2>About This App</h2>
+        <p>This application allows you to manage your inventory efficiently.</p>
+        <p>You can add new products, view the list of products, and manage your inventory with ease.</p>
+        <hr class="my-4">
+        <p>
+            Use The Nav Bar to add, view, update or create products!
+        </p>
+
+        <a class="btn btn-primary btn-lg" href="{% url 'create_product' %}" role="button">Add Product</a>
+        <a class="btn btn-secondary btn-lg" href="{% url 'product_list' %}" role="button">View Products</a>
+    </div>
+{% endblock %}
